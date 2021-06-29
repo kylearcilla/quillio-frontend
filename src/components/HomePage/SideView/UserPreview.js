@@ -6,9 +6,9 @@ import defaultUserPic from '../../../images/default.jpg'
 
 // displays current user's data
 const UserPreview = ({ user, setIsSideViewPressed, isBannermenClicked, setIsBannermenClicked, followers, following }) => {
-    const followerList = (!followers || followers.length !== 0) ? <UserCardList type="suggestion" cards={followers} /> :
+    const followerList = (!followers || followers.length !== 0) ? <UserCardList type="side-view" cards={followers} /> :
         <div className="stat-list-divider">No bannermen.</div>
-    const followingList = (!following || following.length !== 0) ? <UserCardList type="suggestion" cards={following} /> :
+    const followingList = (!following || following.length !== 0) ? <UserCardList type="side-view" cards={following} /> :
         <div className="stat-list-divider">No alliances.</div>
 
     return (
