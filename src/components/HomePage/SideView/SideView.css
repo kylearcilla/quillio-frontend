@@ -356,8 +356,7 @@
 .side-view-card {
   display: flex;
   width: 100%;
-  border-top: 1px solid;
-  border-color: #f0f0f0;
+  border-top: 1px solid #f0f0f0;
   align-items: center;
   height: 75px;
   transition: all ease-in-out 0.17s;
