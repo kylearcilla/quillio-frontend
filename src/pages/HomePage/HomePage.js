@@ -20,11 +20,11 @@ const HomePage = () => {
     const { data: userData } = useContext(AuthContext);
 
     const getBannermenList = () => {
-        const randomUsers = getRandomList(userData.followers, 5);
+        const randomUsers = getRandomList(userData.followers, 4);
         return randomUsers;
     }
     const getAllegiancesList = () => {
-        const randomUsers = getRandomList(userData.following, 5);
+        const randomUsers = getRandomList(userData.following, 4);
         return randomUsers;
     }
 

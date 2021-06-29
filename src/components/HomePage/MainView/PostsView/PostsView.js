@@ -37,7 +37,7 @@ const PostsView = ({ iconClicked, followingPosts, posts, user, isFollowingPostsE
             {(iconClicked === "home" && user) &&
                 <PostCardForm user={user} values={values} onSubmitHandler={onSubmitHandler}
                     onChangeHandler={onChangeHandler} resetValues={resetValues} />}
-            {((!user || (iconClicked === "all"))) && (posts) && posts.map((post) => <PostCard key={post.id} post={post} />)}
+            {((!user || (iconClicked === "all"))) && posts && posts.map((post) => <PostCard key={post.id} post={post} />)}
             {((user) && (iconClicked === "home")) && followingPosts && (followingPosts.map((post) => <PostCard key={post.id} post={post} />))}
             {((user) && (iconClicked === "home")) && isFollowingPostsEmpty && <div className="empty-posts-view"><p>Follow lords to see their content!</p></div>}
 

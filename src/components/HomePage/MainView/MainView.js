@@ -36,7 +36,7 @@ const MainView = ({ users }) => {
         return f.userInfo.name.match(text) || f.userInfo.houseName?.match(text) ||
             f.userInfo.username.match(text) || f.body.match(text)
     });
-    const filterPosts = (data && iconClicked === "all") || (!data) && (posts) && posts.filter((p) => {
+    const filterPosts = ((data && iconClicked === "all") || (!data) && (posts)) && posts.filter((p) => {
         const text = new RegExp(searchText, 'i');
         return p.userInfo.name.match(text) || p.userInfo.houseName?.match(text) ||
             p.userInfo.username.match(text) || p.body.match(text)
