@@ -4,7 +4,7 @@ import App from '../App'
 
 // connect to GQL server in Node
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000'
+    uri: 'https://floating-mountain-53965.herokuapp.com/'
 });
 
 // add the token (if there is one) to the header for the context in BackEnd
