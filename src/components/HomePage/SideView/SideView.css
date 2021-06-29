@@ -363,6 +363,10 @@
   transition: all ease-in-out 0.17s;
 }
 
+.side-view.bannermen {
+  border-color: #e6e5e5;
+}
+
 .side-view-card:hover {
   background-color: rgb(251, 251, 251);
 }
