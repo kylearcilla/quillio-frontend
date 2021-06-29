@@ -354,11 +354,12 @@
 
 /* Stat Card */
 .side-view-card {
+  display: flex;
+  width: 100%;
   border-top: 1px solid;
   border-color: #f0f0f0;
-  display: flex;
-  padding-bottom: 8px;
-  overflow: hidden;
+  align-items: center;
+  height: 75px;
   transition: all ease-in-out 0.17s;
 }
 
