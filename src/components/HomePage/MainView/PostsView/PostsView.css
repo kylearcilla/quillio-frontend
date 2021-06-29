@@ -1,0 +1,227 @@
+.PostsView {
+  margin-top: 21px;
+  font-family: "Roboto";
+}
+
+.empty-posts-view {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(53, 53, 53);
+}
+
+/* Post Card */
+.Post-Card {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 11px;
+  height: auto;
+  margin-bottom: 22px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.Post-Card:hover {
+  background-color: rgb(252, 252, 252);
+}
+
+.post-card-container {
+  padding: 27px 30px 28px 29px;
+  z-index: 0;
+}
+
+.post-card-header {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-header-container {
+  display: column;
+  width: 100%;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.profile-header-top-details {
+  display: flex;
+  font-weight: 500;
+  margin-left: 21px;
+  width: 100%;
+}
+
+.profile-header-top-details span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.profile-header-top-details .name {
+  font-size: 14px;
+  width: auto;
+  max-width: 130px;
+  min-width: 20px;
+  text-overflow: ellipsis;
+}
+
+.profile-header-top-details .username {
+  color: #969696;
+  padding-left: 13px;
+  font-size: 11px;
+  margin-top: 3px;
+  font-weight: 400;
+
+  width: auto;
+  max-width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-header-top-details .dot {
+  color: #969696;
+  margin-left: 2%;
+  font-size: 11px;
+  margin-top: 3px;
+
+  width: auto;
+  max-width: 150px;
+  text-overflow: ellipsis;
+}
+
+.profile-header-top-details .time {
+  padding-left: 2%;
+  color: #989898;
+  margin-top: 3px;
+  font-size: 10px;
+
+  width: 100%;
+  max-width: 150px;
+}
+
+.profile-header-bottom-details {
+  margin-top: -3px;
+  margin-left: 22px;
+}
+
+.profile-header-bottom-details .house-name {
+  padding-left: 9px;
+  color: #aeadad;
+  font-size: 11px;
+}
+
+#house-icon {
+  color: #c1c0c0;
+  font-size: 10px;
+}
+
+.post-card-details {
+  margin-left: 59px;
+  position: relative;
+  margin-right: 18px;
+}
+
+.post-card-details .post-card-text {
+  color: #373636;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.post-card-details .post-img {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  margin-top: 23px;
+  border-radius: 10px;
+  border: 1px solid rgba(204, 204, 204, 0.92);
+}
+
+.post-card-details .post-card-metrics {
+  display: flex;
+  position: relative;
+}
+
+.post-card-details .post-card-metrics .metrics-right {
+  position: absolute;
+  right: 0px;
+}
+
+.metric-icon {
+  color: #b2b2b2;
+  transition: all 0.2s ease-in-out;
+  font-size: 13px;
+  padding-top: 25px;
+}
+
+.metric-icon:hover {
+  color: #8a8888;
+  cursor: pointer;
+}
+
+.post-metric-text {
+  color: #b2b2b2;
+  font-size: 11px;
+  padding-left: 7px;
+  padding-right: 23px;
+}
+
+.post-metric-text.comment {
+  padding-right: 0px;
+}
+
+.post-metric-text.comment.true {
+  color: #f7d095;
+}
+
+.fas.fa-scroll.metric-icon.true {
+  color: #f7d095;
+}
+
+.far.fa-trash-alt.metric-icon {
+  padding-left: 21px;
+}
+
+.post-metric-text.liked,
+.metric-icon.liked {
+  color: #6ace9e;
+}
+
+.post-metric-text.disliked,
+.metric-icon.disliked {
+  color: #f5907d;
+}
+
+@media screen and (max-width: 565px) {
+  .metric-icon {
+    color: #b2b2b2;
+    transition: all 0.2s ease-in-out;
+    font-size: 12px;
+    padding-top: 25px;
+  }
+
+  .Post-Card {
+    width: 360px;
+  }
+
+  .post-metric-text {
+    color: #b2b2b2;
+    font-size: 9px;
+    padding-left: 4px;
+    padding-right: 10px;
+  }
+  .post-card-details .post-card-metrics .metrics-right {
+    position: absolute;
+    right: 0px;
+  }
+}

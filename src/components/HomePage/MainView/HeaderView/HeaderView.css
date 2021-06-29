@@ -1,0 +1,185 @@
+.Header {
+  margin-top: 8px;
+}
+
+.Header .Header-Left {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-left: 4%;
+  position: relative;
+}
+
+.Header .Header-Right {
+  width: 55%;
+  position: relative;
+}
+
+.Header-Left .Header-Tabs {
+  border: none;
+  background: none;
+  height: 25px;
+  padding-top: 7px;
+  display: flex;
+  position: relative;
+  padding-right: 12%;
+}
+
+.Header-Tabs:hover > i,
+.Header-Tabs:hover > .icon-text {
+  color: #464545;
+}
+
+.Header-Left .Header-icon {
+  color: #717171;
+  font-size: 19px;
+  transition: 0.18s all ease-in-out;
+}
+
+.Header-Left .icon-text {
+  padding-left: 8px;
+  margin-top: 3px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: #717171;
+  transition: 0.18s all ease-in-out;
+  text-transform: capitalize;
+}
+
+.Header-Left .icon-text.home.active {
+  color: #685e88;
+}
+
+.Header-Left .icon-text.all.active {
+  color: #c67e7e;
+}
+
+.Header-Left .icon-text.westerlings.active {
+  color: #ffc288;
+}
+
+.Header-Left #home-icon-active {
+  color: #685e88;
+}
+
+.Header-Left #all-icon {
+  padding-top: 3px;
+  font-size: 17px;
+}
+
+.Header-Left #all-icon-active {
+  color: #c67e7e;
+  padding-top: 3px;
+  font-size: 17px;
+}
+
+.Header-Left #westerlings-icon {
+  padding-top: 4px;
+  font-size: 15px;
+}
+
+.Header-Left #westerlings-icon-active {
+  color: #ffc288;
+  padding-top: 4px;
+  font-size: 15px;
+}
+
+.Header-Left .tab-higlighter {
+  background-color: #f69a81;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.tab-higlighter.home {
+  left: 30px;
+}
+.tab-higlighter.all {
+  left: 108px;
+  width: 15px;
+}
+.tab-higlighter.westerlings {
+  left: 200px;
+  width: 22px;
+}
+
+.Header-Right .search-bar {
+  outline: none;
+  border-radius: 20px;
+  font-size: 10px;
+  height: 30px;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.Header-Right .search-bar.HomeView {
+  border: 1px solid #929ea9;
+  width: 80%;
+  float: right;
+  margin-right: 18px;
+  margin-top: 22px;
+  padding: 10px 39px;
+  color: #888888;
+}
+
+.Header-Right .search-bar.HomeView::placeholder {
+  color: #b1b0b0;
+}
+
+.Header-Right .search-bar.HomeView:focus {
+  outline: none;
+  border: 3px solid #6eade8;
+  box-shadow: 0px 0px 5px 2px rgba(91, 158, 234, 0.45);
+  border-radius: 20px;
+}
+
+.Header-Right .HomeView-search-button {
+  background: none;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 20%;
+  border: none;
+  font-size: 11px;
+}
+
+.Header-Right .HomeView-search-button:hover > #search-icon {
+  color: #434242;
+}
+
+.Header-Right .HomeView-search-button #search-icon {
+  color: #7b7b7b;
+}
+
+@media screen and (max-width: 1012px) {
+  .Header .Header-Left .Header-Tabs {
+    padding-right: 26px;
+  }
+  .Header .Header-Left .icon-text {
+    display: none;
+  }
+
+  .Header-Left .tab-higlighter {
+    width: 18px;
+    bottom: 0px;
+  }
+
+  .tab-higlighter.home {
+    left: -1px;
+  }
+  .tab-higlighter.all {
+    left: 46px;
+    width: 15px;
+  }
+  .tab-higlighter.westerlings {
+    width: 17px;
+    left: 88px;
+  }
+}
+
+.PostsView {
+  width: 100%;
+  height: 100%;
+}

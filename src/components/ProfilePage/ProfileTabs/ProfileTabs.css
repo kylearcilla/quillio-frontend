@@ -1,0 +1,111 @@
+.profile-tabs {
+  display: flex;
+}
+
+.profile-tabs button {
+  border: 0px;
+}
+
+/* tab-container */
+.profile-tab {
+  display: flex;
+  transition: all 0.24s ease-in-out;
+  width: 80px;
+  background-color: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 3%;
+}
+
+.profile-tab:hover {
+  filter: brightness(80%);
+}
+
+.profile-tab.active:hover {
+  filter: brightness(110%);
+}
+
+.profile-tab.active {
+  display: flex;
+  width: 113px;
+  background-color: #f98c7a;
+  filter: brightness(104%);
+  font-weight: 400;
+}
+
+.profile-tab.active:hover {
+  filter: brightness(110%);
+}
+
+/* tab-content */
+.profile-tab-contents {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px auto;
+  color: #b7b7b7;
+}
+
+.profile-tab-contents.active {
+  color: white;
+}
+
+.profile-tab-contents i {
+  font-size: 13px;
+}
+
+.profile-tab-contents p {
+  margin: 0px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.profile-tab-contents i {
+  visibility: hidden;
+  width: 0px;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.3s ease-in-out, width 0.19s ease-in-out;
+}
+
+.profile-tab-contents.active i {
+  visibility: visible;
+  opacity: 1;
+  width: 28px;
+  margin-right: 6px;
+}
+
+/* types */
+
+.liked.posts {
+  background-color: transparent;
+  width: 120px;
+}
+
+.profile-tab.active.liked.posts {
+  background-color: #6ace9e;
+  width: 150px;
+}
+
+.allegiances {
+  background-color: transparent;
+  width: 120px;
+  color: #b7b7b7;
+}
+
+.profile-tab.active.allegiances {
+  background-color: #9190f5;
+  width: 150px;
+  color: white;
+}
+
+.bannermen {
+  background-color: transparent;
+  width: 120px;
+}
+
+.profile-tab.active.bannermen {
+  background-color: #6fb9f9;
+  width: 150px;
+}

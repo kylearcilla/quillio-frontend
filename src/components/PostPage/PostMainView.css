@@ -1,0 +1,72 @@
+.profile-page-left.post-page {
+  margin-bottom: 40px;
+}
+
+.Post-Card.comment-card {
+  cursor: auto;
+  position: relative;
+}
+
+.comment-count {
+  font-weight: 500;
+  padding: 25px 0px 20px 0px;
+  color: rgb(69, 69, 69);
+}
+
+.dots-menu {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  font-size: 16px;
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+}
+
+.dots-menu:hover {
+  color: black;
+}
+
+.modal.options-box {
+  position: absolute;
+  display: block;
+  top: 12px;
+  right: 25px;
+  left: auto;
+  padding: 14px 18px 9px 18px;
+}
+
+.modal.options-box button {
+  border: 0px;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: rgb(97, 97, 97);
+}
+
+.modal.options-box button:hover {
+  color: black;
+}
+
+.Post-Card.comment-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.Post-Card.comment-card:hover {
+  background-color: white;
+}
+
+.post-card-form-container.comment-form {
+  padding-bottom: 30px;
+}
+
+.profile-img.post-page {
+  width: 50px;
+  height: 50px;
+}
+
+.post-card-details.post-page {
+  margin-left: 70px;
+}
+
+.post-card-text.post-page {
+  margin: 2px 0px -9px 0px;
+}

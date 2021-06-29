@@ -1,0 +1,171 @@
+.profile-pg-top-view {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  font-family: Roboto;
+  margin-bottom: 60px;
+}
+
+.banner-image {
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
+}
+
+.profile-pg-top-details {
+  height: 200px;
+  margin: 15px 30px -6px min(280px, 35%);
+}
+
+.top-details-top {
+  display: flex;
+  height: 37px;
+  margin: 30px 0px -12px 0px;
+  width: 100%;
+  overflow: auto;
+}
+
+.top-details-top h2 {
+  font-size: 21px;
+  color: #3e3e3e;
+  font-weight: bold;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 15px;
+}
+
+.top-details-user-metrics {
+  display: flex;
+  float: right;
+  min-width: 110px;
+  margin: 4px 0px 0px auto;
+}
+
+.top-details-user-metrics p {
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5e5e5e;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+}
+
+.top-details-user-metrics span {
+  font-size: 14px;
+  color: #9a9999;
+  font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#allegiances {
+  margin-right: 1.6vw;
+}
+
+#profile-pg-username {
+  color: #828282;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+#profile-bio {
+  margin: 20px 0px 27px 0px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.top-details-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.top-view-detail:not(:last-child) {
+  color: #b6b6b6;
+  font-size: 13px;
+  margin: 3px 3% 0px 0px;
+  white-space: nowrap;
+}
+
+.top-view-detail-text {
+  color: #9e9e9e;
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 5%;
+  white-space: nowrap;
+}
+
+.profile-pg-top-view:after {
+  content: "";
+  display: block;
+}
+
+.profile-pg-user-img-container {
+  width: 18vw;
+  height: 18vw;
+  max-height: 220px;
+  max-width: 220px;
+  position: absolute;
+  bottom: 120px;
+  left: 4%;
+}
+
+#profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 8px solid white;
+}
+
+/* Follow Button: not following yet */
+.user-card-follow-btn.following.profile-page {
+  background-color: white;
+}
+
+.user-card-follow-btn.following.profile-page i {
+  display: block;
+  color: #ff947c;
+  font-size: 17px;
+}
+
+.user-card-follow-btn.following.profile-page:hover {
+  border: 1px solid #ff947c;
+  background-color: #ff947c;
+  color: white;
+}
+
+.user-card-follow-btn.following.profile-page:hover > i {
+  color: white;
+}
+
+/* already following */
+.user-card-follow-btn.following.profile-page,
+.user-card-follow-btn.not-following.profile-page {
+  width: 50px;
+  height: 50px;
+  min-height: 45px;
+  margin: 0px;
+  bottom: 0px;
+  border: 4px solid;
+}
+
+.user-card-follow-btn.following.profile-page p,
+.user-card-follow-btn.not-following.profile-page p {
+  display: none;
+}
+
+.user-card-follow-btn.not-following.profile-page:hover > #prof-pg-not-follow {
+  display: none;
+  color: white;
+}
+
+#prof-pg-not-follow {
+  color: white;
+  display: block;
+  font-size: 17px;
+}

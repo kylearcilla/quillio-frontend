@@ -1,0 +1,206 @@
+.home-users-view {
+  margin-top: 22px;
+  height: 100%;
+}
+
+/* User Result Card */
+.user-result-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 75px;
+  background-color: white;
+  padding: 15px 20px 25px 20px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  height: auto;
+  transition: all ease-in-out 0.17s;
+}
+
+.user-result-card:hover {
+  background-color: rgb(251, 251, 251);
+}
+
+.user-result-card .user-result-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.user-result-card .user-result-profile-img {
+  margin: 15px 18px 15px 18px;
+}
+
+.user-result-card-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.user-result-card-user-bio {
+  font-family: Roboto;
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  color: rgb(62, 62, 62);
+  margin-right: 15px;
+}
+
+.user-result-card-btn-container {
+  width: 25%;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-card-follow-btn.user-result p {
+  padding: 0px;
+  margin: 0px;
+  padding: 7px 9px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #ff947c;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user-card-follow-btn.user-result {
+  background-color: transparent;
+  border: 1px solid #ff947c;
+  border-radius: 30px;
+  transition: 0.2s all ease-in-out;
+  position: absolute;
+  width: 100%;
+  right: 8%;
+  max-width: 120px;
+}
+
+.user-card-follow-btn.user-result i {
+  display: none;
+  font-size: 15px;
+  color: #fcedea;
+  padding: 6px 9px;
+}
+
+.user-card-follow-btn.user-result:hover {
+  color: white;
+  background-color: #fa8e75;
+  border: 1px solid #fa8e75;
+}
+
+.user-card-follow-btn.user-result:hover > p {
+  display: none;
+}
+
+.user-card-follow-btn.user-result:hover > i {
+  display: block;
+}
+
+/* User Card: Button */
+.user-card-follow-btn.user-result.not-following {
+  background-color: #ff947c;
+  border: 1px solid #ff947c;
+  transition: 0.2s all ease-in-out;
+}
+
+.user-card-follow-btn.user-result.not-following > #prof-pg-not-follow {
+  display: none;
+}
+
+.user-card-follow-btn.user-result.not-following p {
+  color: white;
+}
+
+.user-result-card-details-top {
+  display: flex;
+  margin-bottom: -5px;
+}
+
+.user-result-card-details-top h5:first-child {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user-result-card-details-top-username {
+  color: #969696;
+  font-weight: 400;
+  font-size: 11px;
+  padding: 1px 0px 0px 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: auto;
+  text-decoration: none;
+}
+
+.user-result-card-details-top a {
+  color: #bab7b7;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 2px;
+  display: block;
+  cursor: pointer;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-result-card-details-bottom {
+  display: none;
+}
+
+.user-result-card-details-bottom a {
+  color: #a4a3a3;
+  font-weight: 300;
+  font-size: 12px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-result-card-house-details {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#user-result-house-icon {
+  color: #c2bfbf;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.user-result-card-house-details span {
+  font-size: 11px;
+  color: #878686;
+  padding-left: 9px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 600px) {
+  .user-result-card-details {
+    width: 50%;
+  }
+  .user-result-card-btn-container {
+    width: 70%;
+  }
+}

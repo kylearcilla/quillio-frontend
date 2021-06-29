@@ -1,0 +1,103 @@
+.profile-side-details {
+  margin: 0px 8% 20px 8%;
+  background-color: white;
+  border-radius: 10px;
+  font-family: Roboto;
+  padding-bottom: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profile-side-details p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile-account-details .header {
+  display: flex;
+  align-items: baseline;
+  padding: 22px 24px 10px 10%;
+  width: 100%;
+}
+
+.profile-account-details .header h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #545454;
+  width: auto;
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profile-account-details button {
+  background-color: transparent;
+  display: flex;
+  border: 0px;
+  margin-left: auto;
+  color: #c7c7c7;
+  font-size: 12px;
+}
+
+.profile-account-details button:hover > i,
+.profile-account-details button:hover > p {
+  transition: all 0.2s ease-in-out;
+  color: #6fb9f9;
+}
+
+.profile-account-details button i {
+  font-size: 12px;
+  margin: 2px 0px 0px 12px;
+}
+
+.profile-account-details .details-container {
+  border-top: 1px solid rgb(223, 223, 223);
+}
+
+.profile-account-details .details-container .detail {
+  display: flex;
+  margin: 20px 0px 0px 10%;
+}
+
+.profile-account-details .details-container .detail i {
+  margin-top: 13px;
+  font-size: 18px;
+  color: #cfcfcf;
+}
+
+.profile-account-details .details-container .detail-text {
+  display: block;
+  margin-left: 10%;
+}
+
+.profile-account-details .details-container .detail-text .title {
+  color: #cfcfcf;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.profile-account-details .details-container .detail-text .subtitle {
+  color: #f69a81;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.suggestions-list.profile {
+  background-color: white;
+  margin: 0px 8% 0px 8%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.suggestions-title-profile {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #545454;
+  width: auto;
+  padding: 20px 20px 13px 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

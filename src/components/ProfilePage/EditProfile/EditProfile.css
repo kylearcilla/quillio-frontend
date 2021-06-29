@@ -1,0 +1,185 @@
+.edit-profile-page {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  background-color: rgba(31, 31, 31, 0.6);
+  overflow: hidden;
+}
+
+.edit-profile-page.off {
+  display: none;
+}
+
+.edit-profile-modal {
+  width: 60%;
+  height: 66%;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.modal-container {
+  padding: 50px 60px 0px 70px;
+}
+
+.modal-container h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.sign-in-up-inputs-two-box.profile-page-edit {
+  margin: 30px 0px 14px 0px;
+}
+
+.sign-form-title.sign-in-up-page.profile {
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: auto;
+}
+
+.sign-form-input.profile:focus {
+  outline: none;
+  border: 3px solid #6fb9f9;
+  box-shadow: 0px 0px 5px 2px rgba(111, 185, 249, 0.4);
+}
+
+.profile-edits-bottom {
+  margin-top: 40px;
+  display: flex;
+}
+
+.file-upload-label.edit-profile:hover > p {
+  transition: all 0.15s ease-in-out;
+  color: rgb(133, 133, 133);
+}
+
+.file-upload-label.edit-profile {
+  padding-left: 0px;
+  margin: 0px;
+  height: 12px;
+}
+
+.post-card.post-metric-text.file-name.edit-profile {
+  padding: 0px 15px 0px 0px;
+  max-width: 140px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.file-upload-label.edit-profile p {
+  font-size: 12px;
+  color: rgb(72, 72, 72);
+  padding-right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.delete-user-button {
+  background-color: transparent;
+  border: 0px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #f77674;
+  transition: 0.24s all ease-in-out;
+}
+
+.delete-user-button:hover {
+  filter: brightness(110%);
+}
+
+.profile-edits-buttons {
+  margin-top: 120px;
+  position: relative;
+}
+
+.button.profile-edits.cancel-changes {
+  width: 47%;
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  left: 0px;
+}
+
+.delete-user-modal {
+  position: absolute;
+  background-color: rgba(36, 36, 36, 0.3);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-user-modal-box {
+  background-color: white;
+  width: auto;
+  height: 20%;
+  border-radius: 14px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.delete-user-modal-box h4 {
+  font-size: 14px;
+  color: rgb(79, 79, 79);
+  padding: 40px 10% 0px 10%;
+  text-align: center;
+}
+
+.delete-user-modal-buttons {
+  margin-top: 26px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  display: flex;
+}
+
+.delete-modal {
+  position: relative;
+  font-size: 12px;
+  position: relative;
+  margin-right: 10px;
+  border: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.delete-modal:hover {
+  font-size: 12px;
+  border: 1px;
+}
+
+.delete-modal.cancel {
+  right: 10px;
+}
+
+.delete-modal.delete-user {
+  left: 10px;
+  background-color: rgb(218, 218, 218);
+}
+
+.delete-modal.delete-user:hover {
+  filter: brightness(104%);
+}
+
+.button.profile-edits.save-changes {
+  width: 47%;
+  background-color: #6fb9f9;
+  border: 1px solid #6fb9f9;
+  font-size: 15px;
+  right: 14px;
+}
+
+.button.profile-edits.save-changes:hover,
+.button.profile-edits.cancel-changes:hover {
+  filter: brightness(106%);
+}

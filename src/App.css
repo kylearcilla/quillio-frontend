@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  background: radial-gradient(
+      36.8% 76.21% at 42.37% 39.53%,
+      rgba(255, 245, 238, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      54.98% 56.52% at 96.24% 96.11%,
+      #fff5ee 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      36.82% 71.11% at 44.25% 86.82%,
+      rgba(255, 245, 238, 0.8) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(250, 233, 208, 0.3) -1.01%,
+      rgba(255, 255, 255, 0) 8.28%
+    ),
+    #fbf9f7;
+  min-height: 766px;
+}
+
+/* Global Elements: Input Forms */
+.sign-form-container {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.sign-form-title {
+  font-family: Roboto;
+  font-size: 0.65rem;
+}
+
+.sign-form-input {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 30px;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: rgb(109, 108, 108);
+  border: 1px solid #a9b2ba;
+  padding: 10px 16px;
+}
+
+.sign-form-input.errors {
+  border: 2px solid rgba(250, 115, 100, 0.8);
+}
+
+.sign-form-input:focus {
+  outline: none;
+  border: 3px solid #fa9875;
+  box-shadow: 0px 0px 5px 2px rgba(245, 136, 90, 0.5);
+}
+
+.sign-form-input::placeholder {
+  color: rgb(218, 218, 218);
+  font-weight: 100;
+  font-size: 11px;
+}
+
+/* Post Card Form */
+.post-card-form {
+  font-family: Roboto;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 11px;
+  position: relative;
+}
+
+.post-card-form .metric-icon {
+  padding: 0px;
+}
+
+.post-card-form-container {
+  padding: 30px;
+  padding-bottom: 45px;
+}
+
+.post-card-form-top {
+  display: flex;
+  width: 100%;
+}
+
+.post-card-details-container {
+  width: 100%;
+  display: inline;
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.post-card-form.profile-header-top-details {
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+.post-card-form.profile-header-bottom-details {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.post-card-details-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.post-card-details-body button {
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+}
+
+.post-card-details-body button:disabled {
+  color: rgb(210, 210, 210);
+}
+
+.post-card-details-body i {
+  margin-top: 13px;
+  transition: 0.1s all ease-in-out;
+  font-size: 17px;
+}
+
+.post-card.sign-form-input {
+  border-radius: 0px;
+  border: 0px solid;
+  border-bottom: 1px solid rgb(193, 192, 192);
+  width: 100%;
+  margin-right: 16px;
+  padding: 13px 0px 14px 2px;
+  color: #919090;
+  font-size: 14px;
+}
+
+.post-card.sign-form-input::placeholder {
+  font-size: 15px;
+  font-weight: 100;
+  color: #e4e4e4;
+}
+
+.post-card.sign-form-input:focus {
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #6eade8;
+  box-shadow: 0px 3px 3px -2px #9ad1ee;
+}
+
+.post-card-form-bottom {
+  display: flex;
+  position: absolute;
+  right: 25px;
+}
+
+.post-card-form-bottom span {
+  font-size: 11px;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-card-form-bottom i {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.fas.fa-feather-alt.metric-icon.disabled {
+  color: rgb(233, 233, 233);
+}
+
+.file-upload-label {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 13px;
+  display: flex;
+  align-items: baseline;
+}
+
+.file-upload-label span,
+.file-upload-label i {
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.post-card.post-metric-text.file-name {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 3px;
+}
+
+.file-upload-label:hover > span,
+.file-upload-label:hover > i {
+  color: rgb(123, 123, 123);
+}
+
+.fas.fa-image.post-card.metric-icon {
+  font-size: 11px;
+}
+
+.post-card.post-metric-text.cancel {
+  cursor: pointer;
+}
+
+.post-card.post-metric-text.cancel:hover {
+  color: rgb(123, 123, 123);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* Buttons */
+.button {
+  background-color: #fa8e75;
+  border: 1px solid #ff947c;
+  border-radius: 10px;
+  width: 100%;
+  transition: 0.2s all ease-in-out;
+  position: absolute;
+  padding: 7px 9px;
+  font-size: 9px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.button:hover {
+  color: white;
+  background-color: #feb1a0;
+  border: 1px solid #fac0b3;
+}
+
+/* Error Details */
+.error-details {
+  width: 100%;
+}
+
+.error-details .list-error-item {
+  font-size: 0.8rem;
+  color: #e9594e;
+}
+
+.error-details .list-error-item.log-in-preview {
+  font-size: 0.6rem;
+  color: #e9594e;
+}
+
+/* App Details */
+.app-details.sign-in-up {
+  padding: 30px 30px;
+  width: 50%;
+}
+
+.app-details {
+  font-family: "Roboto";
+  padding: 0 20px;
+  margin: 0px;
+  color: rgb(182, 182, 182);
+  font-weight: 100;
+  font-size: 0.58rem;
+  line-height: 12px;
+  position: absolute;
+  bottom: -5px;
+  left: 4px;
+}
+
+.app-details.sign-in-up {
+  padding: 30px 30px;
+  width: 50%;
+}

@@ -1,0 +1,60 @@
+.profile-page {
+  width: 100%;
+  min-height: 1200px;
+  font-family: Roboto;
+}
+
+.profile-page-header {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.login-side-logo.profile {
+  margin-left: 52px;
+}
+
+.login-side-logo.profile a {
+  margin-top: 5px;
+  font-weight: 700;
+  color: hsl(0, 0%, 31%);
+  font-size: 17px;
+}
+
+#profile-logo {
+  font-size: 13px;
+  right: 10px;
+  bottom: -3px;
+}
+
+.profile-header-info {
+  margin: 9px 50px 18px auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-header-info a {
+  color: #3f556a;
+}
+
+.profile-header-info img {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+.profile-page-container {
+  margin: 0px 20px 0px 52px;
+
+  display: flex;
+}
+
+.profile-page-left {
+  width: 70%;
+}
+
+.profile-page-right {
+  width: 30%;
+}

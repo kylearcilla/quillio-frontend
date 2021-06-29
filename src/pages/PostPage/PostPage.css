@@ -1,0 +1,11 @@
+.profile-page.post-page {
+  min-height: 870px;
+}
+
+.Post-Card.post-page-card {
+  cursor: auto;
+}
+
+.Post-Card.post-page-card:hover {
+  background-color: white;
+}

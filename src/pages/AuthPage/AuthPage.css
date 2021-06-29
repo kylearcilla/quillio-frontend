@@ -1,0 +1,137 @@
+.Sign-In-Up-Page {
+  width: 100%;
+  min-height: 846px;
+  display: flex;
+  font-family: "Roboto";
+  position: relative;
+}
+
+.sign-in-up-page-left {
+  width: 52%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-up-page-title {
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+  width: 114px;
+  height: 20px;
+}
+
+.sign-in-up-page-title h1 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.sign-in-up-page-title i {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 0px;
+  bottom: -7px;
+}
+
+.sign-in-up-inputs-container {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-up-inputs-outer-container {
+  width: 70%;
+}
+
+.sign-in-up-inputs-one-box {
+  padding: 12px 0px;
+}
+
+.sign-in-up-inputs-two-box {
+  width: 100%;
+  display: flex;
+}
+
+.sign-in-un-button-container {
+  margin: 30px 20px 40px 0px;
+  position: relative;
+}
+
+.button.sign-in-up-page {
+  font-size: 13px;
+  border-radius: 18px;
+  position: absolute;
+  background-color: #7c6ca5;
+  border: 1px solid #7c6ca5;
+}
+
+.button.sign-in-up-page:hover,
+.button.sign-in-up-page.loading {
+  color: white;
+  background-color: #a295c7;
+  border: 1px solid #a295c7;
+}
+
+.sign-in-up-page-right {
+  width: 48%;
+}
+
+.sign-in-up-img-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.sign-form-container.sign-in-up-page {
+  padding-right: 20px;
+}
+
+.sign-form-title.sign-in-up-page {
+  font-size: 0.75rem;
+  color: #525252;
+}
+.sign-form-input.sign-in-up-page {
+  height: 35px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.sign-in-up-bottom-info {
+  display: flex;
+}
+
+.sign-in-up-link {
+  margin: 14px auto 0px auto;
+  font-size: 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-up-img-container img {
+  width: 70%;
+}
+
+.sign-in-up-errors {
+  width: 65%;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 660px) {
+  .sign-in-up-page-left {
+    width: 100%;
+  }
+
+  .sign-in-up-page-right {
+    display: none;
+  }
+
+  .app-details.sign-in-up {
+    width: 100%;
+  }
+}
