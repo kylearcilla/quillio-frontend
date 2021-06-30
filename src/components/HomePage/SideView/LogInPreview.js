@@ -7,7 +7,7 @@ import { AuthContext } from '../../../authentication/AuthContext'
 import useForm from '../../../utilities/useForm'
 
 // an additional login component for the Home Page
-const LogInPreview = () => {
+const LogInPreview = ({ loading: homeLoading }) => {
     const [errors, setErrors] = useState({});
     const { loginOrRegister } = useContext(AuthContext);
     const { onChangeHandler, onSubmitHandler, values } = useForm(callback, {
@@ -55,7 +55,9 @@ const LogInPreview = () => {
                 />
             </div>
             <div className="login-side-btn-container">
-                <Button text={"Login!"}
+                <Button
+                    homeLoading={homeLoading}
+                    text={"Login!"}
                     type={`log-in-preview ${loading ? "loading" : ""}`}
                     buttonHandler={onSubmitHandler}
                 />

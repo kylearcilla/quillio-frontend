@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import SideView from './SideView/SideView'
 
 // Separate component to handle state management of side view state, prevent rerender of GET_USERS
-const LeftSideView = ({ userData, followers, following }) => {
+const LeftSideView = ({ loading, userData, followers, following }) => {
     const [isSideViewPressed, setIsSideViewPressed] = useState(false);
 
     return (
         <>
             <div className={isSideViewPressed ? "Sidebar clicked" : "Sidebar"}>
                 <SideView
+                    loading={loading}
                     setIsSideViewPressed={() => { setIsSideViewPressed(!isSideViewPressed) }}
                     userData={userData}
                     followers={followers} following={following}

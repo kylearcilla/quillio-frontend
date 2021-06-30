@@ -7,6 +7,15 @@
   margin: 27px 45px 50px 34px;
 }
 
+.spinner {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  margin-top: 15px;
+  top: 5%;
+  left: 50%;
+}
+
 .suggest-view-header {
   display: flex;
   width: 100%;
@@ -60,6 +69,8 @@
 
 .suggestions-list {
   padding-bottom: 10px;
+  position: relative;
+  min-height: 80px;
 }
 
 /*  suggestions card  */

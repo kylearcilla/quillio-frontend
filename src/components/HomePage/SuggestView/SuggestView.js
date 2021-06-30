@@ -5,9 +5,10 @@ import getRandomList from '../../../utilities/getRandomList'
 import { AuthContext } from '../../../authentication/AuthContext'
 
 import defaultUserPic from '../../../images/default.jpg'
+import spinner from '../../../images/spinner.gif'
 import './SuggestView.css'
 
-const SuggestView = ({ users }) => {
+const SuggestView = ({ loading: homeLoading, users }) => {
     const { data: userData } = useContext(AuthContext);
     const getWesterlings = () => {
         if (!users) return;
@@ -39,7 +40,8 @@ const SuggestView = ({ users }) => {
             <div className="suggestions-container">
                 <span className="suggestions-title">{userData ? "Possible Allegiances" : "Westerlings"}</span>
                 <div className="suggestions-list">
-                    {userData ? getUserSuggestions() : getWesterlings()}
+                    {homeLoading ? <img src={spinner} className="spinner" /> :
+                        userData ? getUserSuggestions() : getWesterlings()}
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ import { GET_USERS_QUERY } from '../../utilities/gqlTags'
 // 3. Right User Suggestions - UserSuggestions
 
 const HomePage = () => {
-    const { data: { getUsers: users } = {} } = useQuery(GET_USERS_QUERY);
+    const { loading, data: { getUsers: users } = {} } = useQuery(GET_USERS_QUERY);
     const { data: userData } = useContext(AuthContext);
 
     const getBannermenList = () => {
@@ -31,16 +31,17 @@ const HomePage = () => {
     return (
         <div className="Home-Page">
             <LeftSideView
+                loading={loading}
                 userData={userData}
                 followers={userData && getBannermenList()}
                 following={userData && getAllegiancesList()}
             />
             <div className="Right">
                 <div className="Home">
-                    <MainView users={users} />
+                    <MainView loading={loading} users={users} />
                 </div>
-                <div className="SuggestBar">
-                    <SuggestView users={users} />
+                <div className="SuggestBar"  >
+                    <SuggestView loading={loading} users={users} />
                 </div>
             </div>
         </ div >

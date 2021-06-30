@@ -7,10 +7,11 @@ import PostsView from './PostsView/PostsView';
 import UsersView from './UsersView/UsersView'
 import { AuthContext } from '../../../authentication/AuthContext'
 import { GET_POSTS_QUERY, GET_FOLLOWING_POSTS_QUERY } from '../../../utilities/gqlTags'
+import spinner from '../../../images/spinner.gif'
 
 // MainView that houses - HeaderTabs + SearchBar, PostsView, UsersView
 // This component rerenders everyime a user is followed, since curretUser's follow array is being updated
-const MainView = ({ users }) => {
+const MainView = ({ loading: homeLoading, users }) => {
     const { data } = useContext(AuthContext);
     const [iconClicked, setIconClicked] = useState("home");
     const [searchText, setSearchText] = useState("");
@@ -23,9 +24,7 @@ const MainView = ({ users }) => {
         setSearchText("");
         setIconClicked(tabText);
     }
-    const searchInputHandler = (e) => {
-        setSearchText(e.target.value);
-    }
+    const searchInputHandler = (e) => { setSearchText(e.target.value); }
 
     const filterUsers = (iconClicked === "westerlings") && users && users.filter((u) => {
         const text = new RegExp(searchText, 'i');
@@ -50,15 +49,16 @@ const MainView = ({ users }) => {
                 searchText={searchText}
                 searchInputHandler={searchInputHandler}
             />
-            {iconClicked !== "westerlings" ? (!loading && !loading2 && (
-                <PostsView
-                    iconClicked={iconClicked}
-                    followingPosts={data ? filterFollowingPosts : filterPosts}
-                    posts={filterPosts}
-                    user={data}
-                    isFollowingPostsEmpty={followingPosts?.length === 0}
-                />
-            )) : <UsersView users={filterUsers} searchText={searchText} />
+            {homeLoading ? <img src={spinner} className="spinner home" /> :
+                iconClicked !== "westerlings" ? (!loading && !loading2 && (
+                    <PostsView
+                        iconClicked={iconClicked}
+                        followingPosts={data ? filterFollowingPosts : filterPosts}
+                        posts={filterPosts}
+                        user={data}
+                        isFollowingPostsEmpty={followingPosts?.length === 0}
+                    />
+                )) : <UsersView users={filterUsers} searchText={searchText} />
             }
         </div>
     )
