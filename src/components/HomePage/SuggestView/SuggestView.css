@@ -8,12 +8,12 @@
 }
 
 .spinner {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   margin-top: 15px;
   top: 5%;
-  left: 50%;
+  left: 45%;
 }
 
 .suggest-view-header {
