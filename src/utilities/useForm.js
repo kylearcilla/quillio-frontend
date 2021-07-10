@@ -6,11 +6,10 @@ const useForm = (callback, initialState = {}) => {
     const [values, setValues] = useState(initialState);
 
     const onChangeHandler = (e) => {
+        // files are not accessed through value, but by files, so sepration is required
         if (["imageURL", "profileImageURL", "bannerURL"].includes(e.target.classList[2])) {
-            if (e.target.files[0]) {
-                setValues({ ...values, [e.target.classList[2]]: e.target.files[0] });
-                return;
-            }
+            if (!e.target.files[0]) return;
+            setValues({ ...values, [e.target.classList[2]]: e.target.files[0] });
             return;
         }
         setValues({ ...values, [e.target.classList[2]]: e.target.value });
