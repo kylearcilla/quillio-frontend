@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import moment from 'moment'
 
 import './ProfileSideDetails.css'
@@ -9,7 +9,9 @@ import getRandomList from '../../../utilities/getRandomList'
 // Side details - edit profile view & user suggestions for Profile Page
 const ProfileSideDetails = ({ user = {}, users, onClickEdit }) => {
     const { data: currentUser } = useContext(AuthContext);
-    const randomUsers = getRandomList(users, 6);
+    const [randomUsers, setRandomUsers] = useState([]);
+
+    useEffect(() => { setRandomUsers(getRandomList(users, 6)) }, [])
 
     return (
         <div className="profile-page-right">

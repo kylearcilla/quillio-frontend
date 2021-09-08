@@ -9,7 +9,8 @@ import defaultBG from '../../../images/defaultBG.jpg'
 
 // Displaying profile details in the profile page
 const ProfileTopView = ({ user }) => {
-    const { user: currentUser } = useContext(AuthContext);
+    const { data: currentUser } = useContext(AuthContext);
+
     return (
         <div className="profile-pg-top-view">
             <img

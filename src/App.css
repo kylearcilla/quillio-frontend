@@ -266,6 +266,11 @@ input[type="file"] {
   width: 50%;
 }
 
+.app-details-portfolio-link {
+  color: rgb(182, 182, 182);
+  text-decoration: underline;
+}
+
 .app-details {
   font-family: "Roboto";
   padding: 0 20px;

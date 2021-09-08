@@ -6,7 +6,8 @@ import WESTOROS_ART from '../../images'
 export const AppDetails = ({ type }) => {
     return (
         <div className={`app-details ${type}`}>
-            This is a twitter-esque, GOT-inspired social media app made and designed just for fun by Kyle Arcilla.
+            This is a twitter-esque, GOT-inspired social media app made and designed just for fun by
+            <a className="app-details-portfolio-link" href="https://www.kylearcilla.com/" target="_blank"> Kyle Arcilla </a>
             Made using ReactJS, HTML, CSS, Express, Node, MongoDB, GQL, and Cloudinary.
         </div>
     )
