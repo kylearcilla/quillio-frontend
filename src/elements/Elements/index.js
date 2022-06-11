@@ -2,7 +2,6 @@ import React from 'react'
 import WESTOROS_ART from '../../images'
 
 // Different misc. components used throughout the app
-
 export const AppDetails = ({ type }) => {
     return (
         <div className={`app-details ${type}`}>

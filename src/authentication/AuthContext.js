@@ -5,7 +5,6 @@ const initialState = {
     data: null
 }
 
-// if user is logged in AND (user around for < 1h) THEN token is VALID
 const token = localStorage.getItem("jwtToken");
 if (token) {
     const decodedToken = jwtDecode(token);
@@ -13,9 +12,6 @@ if (token) {
         localStorage.removeItem("jwtToken");
         localStorage.removeItem("userData");
     } else {
-        // token is not decoded to initalize user data because...
-        // in the BackEnd, the token only takes in the user's id, name, username, email, so userData is not complete
-        // thus, when login, all fields of user are fetched and stored, not just token
         initialState.data = JSON.parse(localStorage.getItem("userData"));
     }
 }
@@ -26,7 +22,6 @@ const AuthContext = createContext({
     logout: () => { }
 })
 
-// refucer function, takes in a dispatched action & modifies state using it
 function authReducer(state, action) {
     switch (action.type) {
         case 'LOGIN':
@@ -44,31 +39,20 @@ function authReducer(state, action) {
     }
 }
 
-// Provides context (data & functions) all throughout the App Heiarchy
 function AuthProvider({ children }) {
     const [state, dispatch] = useReducer(authReducer, initialState);
 
-    // this function is used everytime a user logs in or registers AND..
-    // ...currentUserData needs to be updated
-    // ...ex. current user just followed someone, so update current user's following prop
     function loginOrRegister(userData) {
-        if (userData.token) {
-            localStorage.setItem("jwtToken", userData.token);
-        }
+        if (userData.token) localStorage.setItem("jwtToken", userData.token);
         localStorage.setItem("userData", JSON.stringify(userData));
-        dispatch({
-            type: 'LOGIN',
-            data: userData
-        });
+
+        dispatch({ type: 'LOGIN', data: userData });
     }
 
     function logout() {
         localStorage.removeItem("jwtToken");
         localStorage.removeItem("userData");
-
-        dispatch({
-            type: 'LOGOUT'
-        });
+        dispatch({ type: 'LOGOUT' });
     }
 
     return (

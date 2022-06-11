@@ -102,14 +102,12 @@ const EditProfile = ({ editProfile, onClickEdit }) => {
                             property="profileImageURL"
                             onChangeHandler={onChangeHandler}
                             values={values}
-                            resetValues={resetValues}
                         />
                         <ImageInputForm
                             title="Banner Image"
                             property="bannerURL"
                             onChangeHandler={onChangeHandler}
                             values={values}
-                            resetValues={resetValues}
                         />
                     </div>
                     <button className="delete-user-button" onClick={() => (setDeleteClicked(true))}>Delete your account</button>

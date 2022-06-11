@@ -50,9 +50,7 @@ export const PostCard = ({ post, type = "" }) => {
 
                 <div className="post-card-details">
                     <div className="post-card-text"> {post.body} </div>
-                    {post.imageURL &&
-                        <img className="post-img" src={post.imageURL} alt="post-img" />
-                    }
+                    {post.imageURL && <img className="post-img" src={post.imageURL} alt="post-img" />}
                     <div className="post-card-metrics">
                         <div className="metrics-left">
                             <LikePostButton user={user} post={post} />

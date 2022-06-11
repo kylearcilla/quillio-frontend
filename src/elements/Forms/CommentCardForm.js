@@ -32,4 +32,3 @@ export const CommentCardForm = ({ user, values, onSubmitHandler, onChangeHandler
         </div >
     )
 }
-

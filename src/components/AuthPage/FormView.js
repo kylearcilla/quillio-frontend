@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import { useState, useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import useForm from '../../utilities/useForm'
@@ -73,7 +73,6 @@ const FormView = ({ type }) => {
         </div>
         {errorsDisplay}
     </>
-
     const registerView = <>
         <div className="sign-in-up-inputs-container">
             <div className="sign-in-up-inputs-two-box">

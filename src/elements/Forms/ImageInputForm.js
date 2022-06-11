@@ -17,9 +17,10 @@ export const ImageInputForm = ({ title, property, values, onChangeHandler }) => 
                 onChange={onChangeHandler}
                 accept="image/*"
             />
-            {values[property] && <span className="post-card post-metric-text file-name edit-profile">
-                {values[property].name}
-            </span>}
+            {values[property] &&
+                <span className="post-card post-metric-text file-name edit-profile">
+                    {values[property].name}
+                </span>}
         </>
     )
 }

@@ -10,11 +10,6 @@ import ProfileMainDetails from '../../components/ProfilePage/ProfileMainDetails'
 import ProfileSideDetails from '../../components/ProfilePage/ProfileSideDetails'
 import EditProfile from '../../components/ProfilePage/EditProfile'
 
-// PostPage has 2 Parts
-// 1. Left Side Main View - Profile Details, Posts, LikedPost, Following/Unfollowing
-// 2. Right User Suggestions - UserSuggestions
-// These are separated to prevent rerenders with mixed states
-
 const ProfilePage = ({ match }) => {
     const { params: { userId } } = match;
     const { data: currentUser } = useContext(AuthContext);
