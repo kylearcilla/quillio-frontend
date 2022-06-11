@@ -3,7 +3,6 @@
   display: flex;
   height: auto;
   padding-bottom: 70px;
-  height: 100vh;
 }
 
 .Sidebar {
@@ -11,8 +10,6 @@
   margin-left: 0px;
   transition: 0.4s ease-in-out;
   position: relative;
-  height: auto;
-  height: 100vh;
 }
 
 .Sidebar.clicked {
