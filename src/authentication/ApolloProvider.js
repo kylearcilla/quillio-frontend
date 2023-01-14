@@ -3,7 +3,7 @@ import { setContext } from '@apollo/client/link/context';
 import App from '../App'
 
 const httpLink = createHttpLink({
-    uri: 'https://guarded-harbor-95623.herokuapp.com/'
+    uri: 'https://quillio-backend.onrender.com/'
 });
 
 const authLink = setContext(() => {
