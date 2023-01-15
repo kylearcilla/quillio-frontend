@@ -49,7 +49,9 @@ const MainView = ({ loading: homeLoading, users }) => {
                 searchText={searchText}
                 searchInputHandler={searchInputHandler}
             />
-            {homeLoading ? <img src={spinner} className="spinner home" /> :
+            {homeLoading ?
+                <div><p className='login-signup-description'>Sorry for the wait. Hosting service takes a while to wake up the server after a period of inactivity!</p>
+                    <img src={spinner} className="spinner home" /> </div> :
                 iconClicked !== "westerlings" ? (!loading && !loading2 && (
                     <PostsView
                         iconClicked={iconClicked}

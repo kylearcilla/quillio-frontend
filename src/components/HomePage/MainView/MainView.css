@@ -10,6 +10,10 @@
   height: 70px;
 }
 
+.HomeBar p {
+  margin-top: 260px;
+}
+
 .spinner.home {
   top: 50%;
   left: 30%;
